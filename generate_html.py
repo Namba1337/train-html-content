@@ -120,6 +120,24 @@ html_content = '''
       stroke: currentColor; /* Наследование цвета из CSS */
     }
 
+        /* Стили для секции "Об университете" */
+    .about {
+      padding: 60px 40px;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      color: #0C143B;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444444;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -146,7 +164,22 @@ html_content = '''
       .arrow-right {
         display: none;
       }
+
+      .about {
+        padding: 40px 20px;
+      }
+      
+      .about h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      
+      .about p {
+        font-size: 16px;
+      }
     }
+
+    
   </style>
 </head>
 <body>
@@ -169,14 +202,20 @@ html_content = '''
   </header>
 
   <section class="hero">
-    <!-- Пример дополнительного элемента-стрелки справа -->
     <img class="arrow-right" src="/arrow-dc3b5c12ab.svg" alt="Стрелка">
 
     <h1>Университет Синергия<br><span class="br-red">Приёмная комиссия</span><br>Поступи прямо сейчас!</h1>
     <p>Узнай минимальный проходной балл в 2025 году, оставь заявку</p>
+  
+  <section class="about">
+    <div class="about-content">
+      <h2>Об университете</h2>
+      <p>«Синергия» — это экосистема образовательных проектов для всех возрастов. Мы готовим специалистов по востребованным направлениям, включая медицину, психологию, юриспруденцию, IT и менеджмент.</p>
+    </div>
+  </section>
 '''
 
 with open('admission_form.html', 'w', encoding='utf-8') as file:
     file.write(html_content)
 
-print("Страница приёмной комиссии создана!")
+print("Страница организации создана!")
