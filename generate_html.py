@@ -202,7 +202,7 @@ html_content = '''
   </header>
 
   <section class="hero">
-    <img class="arrow-right" src="/arrow-dc3b5c12ab.svg" alt="Стрелка">
+    <img class="arrow-right" src="arrow-dc3b5c12ab.svg" alt="Стрелка">
 
     <h1>Университет Синергия<br><span class="br-red">Приёмная комиссия</span><br>Поступи прямо сейчас!</h1>
     <p>Узнай минимальный проходной балл в 2025 году, оставь заявку</p>
